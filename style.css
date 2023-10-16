@@ -20,6 +20,7 @@ header{
     justify-content:flex-end;
     width: 50%;
     font-size:large;
+    align-items: center;
 }
 .header-part-left img{
     width: 50px;
@@ -199,8 +200,14 @@ footer{
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 100%;
+    margin-bottom: 20px;
 }
 
+/* style-section-right-top */
+.section-right-top{
+    font-size: 20px;
+    color: #94a3b8;
+}
 /* style-section-left */
 .checkbox{
     display: block;
