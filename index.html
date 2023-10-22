@@ -11,19 +11,29 @@
     <header>
         <div class="header-part-left">
             <a href="index.html"><img class="lgo-wishe" src="Img/logoAmazon.png" alt="Logo Wishe"></a>
-            <a href="product-list.html" style="text-decoration: none;width: 100%;"><input type="search" placeholder="Cherchez une produit, une marque ou une categorie..."></a>
-        </div>  
+            <img src="Img/magnifier.png" alt="searche icon" class="searche">
+            <a href="product-list.html" style="text-decoration: none;width: 100%;"><input type="search" placeholder="Cherchez une produit, une marque ou une categorie..." class="searche-input"></a>
+        </div> 
         <div class="header-part-right">
-            <a href="">Sign In</a>
-            <a href="" style="margin-right: 50px;">| Create Account</a>
-            <img src="Img/logoMar.png" alt="Flat">
-            <p>Maroc</p>
-            <a href="shipping-cart.html"><img src="Img/Add to cart.png" alt="Add to cart"></a>
-            <p>5</p>
+            <div class="nav-menu">
+                <a href="sign-in.html" class="nav-items"> Sign In </a>
+                <a href="create-account.html" class="nav-items"> Create Account </a>
+                <a href="contact.html" class="nav-items"> Contact Us </a>
+            </div>
+            <div class="items-hidden" style="display: flex;align-items: center;">
+                <img src="Img/logoMar.png" alt="Flat">
+                <p>Maroc</p>
+                <a href="shipping-cart.html"><img src="Img/Add to cart.png" alt="Add to cart"></a>
+                <p>5</p>
+            </div>
+        </div>
+        <div class="humberger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </header>
     <hr>
-
         <section class="section1">
             <div class="part1">
                 <div class="elements-part1">
@@ -72,7 +82,7 @@
                 </div>
             </div>
             <div class="part2">
-                <img src="Img/Product-image.png" alt="Model Picture">
+                <img src="Img/Product-image.png" alt="Camera Product" style="border-radius: 5px;">
             </div>
         </section>
         <section class="section2">
@@ -90,7 +100,7 @@
                         <s>$1450</s> 
                     </div>   
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur</p>
-                    <div class="cart-items" style="margin-top: 100px;">
+                    <div class="cart-items">
                         <div class="cart-items1">
                             <div class="bg-rate">
                                 <img src="Img/star.png" alt="Stars rate" style="width: 20px; height: 20px;">
@@ -110,7 +120,7 @@
                         <s>$1450</s> 
                     </div>   
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur</p>
-                    <div class="cart-items" style="margin-top: 100px;">
+                    <div class="cart-items">
                         <div class="cart-items1">
                             <div class="bg-rate">
                                 <img src="Img/star.png" alt="Stars rate" style="width: 20px; height: 20px;">
@@ -119,7 +129,7 @@
                             <p style="font-size: 18px; border-right: 2px; ">Sold 120</p>
                         </div>
                         <div class="cart-items2">
-                            <img src="Img/Add-to-card.png" alt="Shopping Mall icon" width="é0px" height="30px">
+                            <img src="Img/Add-to-card.png" alt="Shopping Mall icon" width="30px" height="30px">
                         </div>
                     </div>
                 </div>
@@ -130,7 +140,7 @@
                         <s>$1450</s> 
                     </div>   
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur</p>
-                    <div class="cart-items" style="margin-top: 100px;">
+                    <div class="cart-items">
                         <div class="cart-items1">
                             <div class="bg-rate">
                                 <img src="Img/star.png" alt="Stars rate" style="width: 20px; height: 20px;">
@@ -139,7 +149,27 @@
                             <p style="font-size: 18px; border-right: 2px; ">Sold 120</p>
                         </div>
                         <div class="cart-items2">
-                            <img src="Img/Add-to-card.png" alt="Shopping Mall icon" width="é0px" height="30px">
+                            <img src="Img/Add-to-card.png" alt="Shopping Mall icon" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+                <div class="section2-part2-elements">
+                    <a href="product-dtails.html" style="margin: 0px;"><img src="Img/Product1.jpg" alt="Products"></a>
+                    <div class="prix-flex">
+                        <h2>$1200</h2>
+                        <s>$1450</s> 
+                    </div>   
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="cart-items">
+                        <div class="cart-items1">
+                            <div class="bg-rate">
+                                <img src="Img/star.png" alt="Stars rate" style="width: 20px; height: 20px;">
+                                <span style="font-weight: bold;color: white ;">5.0</span>
+                            </div>
+                            <p style="font-size: 18px; border-right: 2px; ">Sold 120</p>
+                        </div>
+                        <div class="cart-items2">
+                            <img src="Img/Add-to-card.png" alt="Shopping Mall icon" width="30px" height="30px">
                         </div>
                     </div>
                 </div>
@@ -319,5 +349,6 @@
             </ul>
             <p>&copy;copy right 2023</p>
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>
