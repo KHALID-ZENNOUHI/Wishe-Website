@@ -11,15 +11,40 @@
     <header>
         <div class="header-part-left">
             <a href="index.html"><img class="lgo-wishe" src="Img/logoAmazon.png" alt="Logo Wishe"></a>
-            <a href="product-list.html" style="text-decoration: none;width: 100%;"><input type="search" placeholder="Cherchez une produit, une marque ou une categorie..."></a>
-        </div>  
+            <img src="Img/search.png" alt="searche icon" class="searche">
+            <a href="product-list.html" style="text-decoration: none;width: 100%;"><input type="search" placeholder="Cherchez une produit, une marque ou une categorie..." class="searche-input"></a>
+        </div> 
         <div class="header-part-right">
-            <a href="">Sign In</a>
-            <a href="" style="margin-right: 50px;">| Create Account</a>
-            <img src="Img/logoMar.png" alt="Flat">
-            <p>Maroc</p>
-            <a href="shipping-cart.html"><img src="Img/Add to cart.png" alt="Add to cart"></a>
-            <p>5</p>
+            <div class="nav-menu">
+                <a href="sign-in.html" class="nav-items"> Sign In </a>
+                <a href="create-account.html" class="nav-items"> Create Account </a>
+                <a href="contact.html" class="nav-items"> Contact Us </a>
+            </div>
+            <div class="items-hidden" style="display: flex;align-items: center;">
+                <img src="Img/logoMar.png" alt="Flat">
+                <p>Maroc</p>
+                <a href="shipping-cart.html">
+                    <img src="Img/Add to cart.png" alt="panier-icon" class="panier-icon">
+                </a>
+                <div class="side-bar">
+                    <div style="display: flex;">
+                        <h5>Product Name</h5>
+                        <div class="product-informations-bg"></div>
+                    </div>
+                    <div>
+                        <strong style="font-size: 25px;">$</strong><strong class="product-price" style="font-size: 25px;">129</strong>
+                        <button class="mince" style="border: none;cursor: pointer;">-</button>
+                        <span class="product-quantity">0</span>
+                        <button class="plus" style="border: none;cursor: pointer;">+</button>
+                    </div>
+                </div>
+                <p class="product-quantity-all">3</p>
+            </div>
+        </div>
+        <div class="humberger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </header>
     <hr>
@@ -38,7 +63,7 @@
                         <div class="product-informations-bg">
                             <span>Your Product!</span>
                         </div>
-                        <h2>$129</h2>
+                        <strong style="font-size: 25px;">$</strong><strong class="product-price" style="font-size: 25px;">129</strong>
                         <h5>Free Shipping & COD</h5>
                     </div>
                     <div class="dle-like-plus-mince">
@@ -48,9 +73,9 @@
                         </div>
                         <div>
                             <div class="plus-mince-products">
-                                <div class="mince">-</div>
-                                <span>1</span>
-                                <div class="plus">+</div>
+                                <button class="mince" style="border: none;cursor: pointer;">-</button>
+                                <span class="product-quantity">0</span>
+                                <button class="plus" style="border: none;cursor: pointer;">+</button>
                             </div>
                         </div>
                     </div>
@@ -63,19 +88,19 @@
                         <div class="product-informations-bg">
                             <span>Your Product!</span>
                         </div>
-                        <h2>$129</h2>
+                        <strong style="font-size: 25px;">$</strong><strong class="product-price" style="font-size: 25px;">129</strong>
                         <h5>Free Shipping & COD</h5>
                     </div>
                     <div class="dle-like-plus-mince">
                         <div class="like-delete">
-                            <span><img src="Img/Like.png" alt="like"></span>
-                            <span><img src="Img/delete.png" alt="delete" style="width: 50px; height: 50px;"></span>
+                            <img src="Img/Like.png" alt="like">
+                            <img src="Img/delete.png" alt="delete" style="width: 50px; height: 50px;">
                         </div>
                         <div>
                             <div class="plus-mince-products">
-                                <div class="mince">-</div>
-                                <span>1</span>
-                                <div class="plus">+</div>
+                                <button class="mince" style="border: none;cursor: pointer;">-</button>
+                                <span class="product-quantity">0</span>
+                                <button class="plus" style="border: none;cursor: pointer;">+</button>
                             </div>
                         </div>
                     </div>
@@ -88,7 +113,7 @@
                         <div class="product-informations-bg">
                             <span>Your Product!</span>
                         </div>
-                        <h2>$129</h2>
+                        <strong style="font-size: 25px;">$</strong><strong class="product-price" style="font-size: 25px;">129</strong>
                         <h5>Free Shipping & COD</h5>
                     </div>
                     <div class="dle-like-plus-mince">
@@ -98,9 +123,9 @@
                         </div>
                         <div>
                             <div class="plus-mince-products">
-                                <div class="mince">-</div>
-                                <span>1</span>
-                                <div class="plus">+</div>
+                                <button class="mince" style="border: none;cursor: pointer;">-</button>
+                                <span class="product-quantity">0</span>
+                                <button class="plus" style="border: none;cursor: pointer;">+</button>
                             </div>
                         </div>
                     </div>
@@ -112,18 +137,18 @@
                 <h3>Summary</h3>
                 <div class="Shipping-dtails">
                     <div>
-                        <p style="font-size: 20px; padding-top: 20px;">Shipping</p>
-                        <p style="font-size: 20px;padding-top: 50px">Price</p>
+                        <p style="font-size: 20px; padding-top: 20px;">Quantity</p>
+                        <p style="font-size: 20px;padding-top: 50px">Shipping</p>
                         <h3 style="padding-top: 80px;">Totale</h3>
                     </div>
                     <div>
-                        <p style="font-size: 20px;padding-top: 20px">$100</p>
+                        <p style="font-size: 20px;padding-top: 20px" class=".product-quantity-all">0</p>
                         <p style="font-size: 20px;padding-top: 50px">$50</p>
-                        <h3 style="padding-top: 80px;">$500</h3>  
+                        <h3 style="padding-top: 80px;" class="totale-price">$500</h3>  
                     </div>
                 </div>
                 <div style="margin: 10px 5px 15px 1px;">
-                    <button style="background-color: #4ADE80;color: white; width: 100%; border: none;text-align: center;height: 40px;border-radius: 5px;">Add to cart</button>
+                    <button style="background-color: #4ADE80;color: white; width: 100%; border: none;text-align: center;height: 40px;border-radius: 5px; font-size: 18px;">Buy now</button>
                 </div>
                 <h3>Payemment Methods</h3>
                 <p style="font-size: 18px; margin-top: 10px;">Cache On Delevery</p>
@@ -131,7 +156,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer style="margin-top: 330px;">
         <ul class="footer-list">
             <li>About</li>
             <li>Support</li>
@@ -139,5 +164,6 @@
         </ul>
         <p>&copy;copy right 2023</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

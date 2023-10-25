@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Wishe</title>
+</head>
+<body>
+    <header>
+        <div class="header-part-left">
+            <a href="index.html"><img class="lgo-wishe" src="Img/logoAmazon.png" alt="Logo Wishe"></a>
+            <img src="Img/search.png" alt="searche icon" class="searche">
+            <a href="product-list.html" style="text-decoration: none;width: 100%;"><input type="search" placeholder="Cherchez une produit, une marque ou une categorie..." class="searche-input"></a>
+        </div> 
+        <div class="header-part-right">
+            <div class="nav-menu">
+                <a href="sign-in.html" class="nav-items"> Sign In </a>
+                <a href="create-account.html" class="nav-items"> Create Account </a>
+                <a href="contact.html" class="nav-items"> Contact Us </a>
+            </div>
+            <div class="items-hidden" style="display: flex;align-items: center;">
+                <img src="Img/logoMar.png" alt="Flat">
+                <p>Maroc</p>
+                <a href="shipping-cart.html">
+                    <img src="Img/Add to cart.png" alt="panier-icon" class="panier-icon">
+                </a>
+                <div class="side-bar">
+                    <div style="display: flex;">
+                        <h5>Product Name</h5>
+                        <div class="product-informations-bg"></div>
+                    </div>
+                    <div>
+                        <strong style="font-size: 25px;">$</strong><strong class="product-price" style="font-size: 25px;">129</strong>
+                        <button class="mince" style="border: none;cursor: pointer;">-</button>
+                        <span class="product-quantity">0</span>
+                        <button class="plus" style="border: none;cursor: pointer;">+</button>
+                    </div>
+                </div>
+                <p class="product-quantity-all">3</p>
+            </div>
+        </div>
+        <div class="humberger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <h1 class="contact-header">Contact US</h1>
+        <div class="form">
+            <form action="" class="form1">
+                <div>
+                    <label for="First-Name">
+                        First Name:
+                    </label>
+                    <input type="text" name="First-Name" id="" placeholder="10 characters or less" required>
+                </div>
+                <div>
+                    <label for="Last-Name">
+                        Last Name:
+                    </label>
+                    <input type="text" name="Last-Name" id="" placeholder="10 characters or less" required>
+                </div>
+                <div>
+                    <label for="Email">
+                        Email:
+                    </label>
+                    <input type="email" name="Email" id="" placeholder="youremail@email.com" required>
+                </div>
+                <div>
+                    <label for="Message">
+                        Message:
+                    </label>
+                    <textarea name="textarea" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                </div>
+                <div class="contact-button">
+                    <button type="submit" name="button">Envoyer</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="social-media-img">
+            <a href=""><img src="Img/logos_facebook.svg" alt=""></a>
+            <a href=""><img src="Img/skill-icons_instagram.svg" alt=""></a>
+            <a href=""><img src="Img/logos_whatsapp-icon.svg" alt=""></a>
+            <a href=""><img src="Img/skill-icons_linkedin.svg" alt=""></a>
+        </div>
+    </main>
+    <footer>
+        <ul class="footer-list">
+            <li>About</li>
+            <li>Support</li>
+            <li>FQA</li>
+        </ul>
+        <p>&copy;copy right 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

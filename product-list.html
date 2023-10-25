@@ -11,18 +11,35 @@
     <header>
         <div class="header-part-left">
             <a href="index.html"><img class="lgo-wishe" src="Img/logoAmazon.png" alt="Logo Wishe"></a>
-            <a href="product-list.html" style="text-decoration: none;width: 100%;"><input type="search" placeholder="Cherchez une produit, une marque ou une categorie..."></a>
-        </div>  
+            <img src="Img/search.png" alt="searche icon" class="searche">
+            <a href="product-list.html" style="text-decoration: none;width: 100%;"><input type="search" placeholder="Cherchez une produit, une marque ou une categorie..." class="searche-input"></a>
+        </div> 
         <div class="header-part-right">
             <div class="nav-menu">
                 <a href="sign-in.html" class="nav-items"> Sign In </a>
                 <a href="create-account.html" class="nav-items"> Create Account </a>
                 <a href="contact.html" class="nav-items"> Contact Us </a>
             </div>
-            <img src="Img/logoMar.png" alt="Flat">
-            <p>Maroc</p>
-            <a href="shipping-cart.html"><img src="Img/Add to cart.png" alt="Add to cart"></a>
-            <p>5</p>
+            <div class="items-hidden" style="display: flex;align-items: center;">
+                <img src="Img/logoMar.png" alt="Flat">
+                <p>Maroc</p>
+                <a href="shipping-cart.html">
+                    <img src="Img/Add to cart.png" alt="panier-icon" class="panier-icon">
+                </a>
+                <div class="side-bar">
+                    <div style="display: flex;">
+                        <h5>Product Name</h5>
+                        <div class="product-informations-bg"></div>
+                    </div>
+                    <div>
+                        <strong style="font-size: 25px;">$</strong><strong class="product-price" style="font-size: 25px;">129</strong>
+                        <button class="mince" style="border: none;cursor: pointer;">-</button>
+                        <span class="product-quantity">0</span>
+                        <button class="plus" style="border: none;cursor: pointer;">+</button>
+                    </div>
+                </div>
+                <p class="product-quantity-all">3</p>
+            </div>
         </div>
         <div class="humberger">
             <span class="bar"></span>
@@ -65,11 +82,7 @@
             </div>
             <div>
                 <h3>Price</h3>
-                <input type="range" id="#slidebar" style="accent-color: #FACC15;">
-                <div class="slidebar-price">
-                    <span>30$</span>
-                    <span>500$</span>
-                </div>
+                30$<input type="range" id="#slidebar" style="accent-color: #FACC15;">500$
             </div>
         </section>
         <section class="section-right">    
@@ -82,7 +95,7 @@
                         Sorted by:
                     </span>
                     <span>
-                        <select style="border-radius: 5px;height: 40px; width: 400px;font-size: 20px;color: #94A3B8;">
+                        <select style="border-radius: 5px;height: 40px; width: 300px;font-size: 20px;color: #94A3B8;">
                             <option value="Sorted A-Z">Sorted A-Z</option>
                             <option value="Sorted Z-A">Sorted Z-A</option>
                             <option value="Sorted By Price">Sorted By Price</option>
